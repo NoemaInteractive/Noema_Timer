@@ -1,0 +1,15 @@
+{
+  "name": "noema-countdown",
+  "version": "1.0.0",
+  "description": "NOEMA Countdown",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2",
+    "helmet": "^8.1.0"
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noema Riddle</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Cinzel -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Cormorant -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loading">
+    <div class="loadingText">
+        Loading...
+    </div>
+</div>
+
+<div id="background"></div>
+<div id="noise"></div>
+<div id="vignette"></div>
+
+<div id="container">
+
+    <h1 id="title">
+        Noema Riddle
+    </h1>
+
+    <div id="countdown">
+
+        <div class="timeBlock">
+            <span id="hours" class="number">00</span>
+            <span class="label">HOURS</span>
+        </div>
+
+        <div class="separator">:</div>
+
+        <div class="timeBlock">
+            <span id="minutes" class="number">00</span>
+            <span class="label">MINUTES</span>
+        </div>
+
+        <div class="separator">:</div>
+
+        <div class="timeBlock">
+            <span id="seconds" class="number">00</span>
+            <span class="label">SECONDS</span>
+        </div>
+
+    </div>
+
+    <div id="finished">
+
+        <h2>
+            The gate has opened.
+        </h2>
+
+        <button id="continueButton">
+            CONTINUE
+        </button>
+
+    </div>
+
+</div>
+
+<div id="particles"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

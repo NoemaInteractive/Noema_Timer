@@ -8,7 +8,7 @@ const USE_SERVER_TIME = true;
 
 // Caso não utilize backend ainda,
 // altere para false e coloque a data abaixo.
-const LOCAL_TARGET = new Date("2026-01-01T00:00:00Z");
+const LOCAL_TARGET = new Date("2026-07-27T18:27:00Z");
 
 let targetDate = null;
 let serverOffset = 0;
@@ -29,6 +29,8 @@ const finished = document.getElementById("finished");
 const continueButton = document.getElementById("continueButton");
 
 const particles = document.getElementById("particles");
+
+const daysElement = document.getElementById("days");
 
 const hoursElement = document.getElementById("hours");
 
@@ -164,14 +166,19 @@ function updateCountdown()
     const totalSeconds =
         Math.floor(difference / 1000);
 
+    const days =
+        Math.floor(totalSeconds / 86400);
+
     const hours =
-        Math.floor(totalSeconds / 3600);
+        Math.floor((totalSeconds % 86400) / 3600);
 
     const minutes =
         Math.floor((totalSeconds % 3600) / 60);
 
     const seconds =
         totalSeconds % 60;
+
+    updateNumber(daysElement, pad(days));
 
     updateNumber(hoursElement, pad(hours));
 
@@ -235,6 +242,7 @@ async function finishCountdown()
 
     countdownFinished = true;
 
+    daysElement.textContent = "00";
     hoursElement.textContent = "00";
     minutesElement.textContent = "00";
     secondsElement.textContent = "00";

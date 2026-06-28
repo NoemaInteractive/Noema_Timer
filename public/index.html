@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noema</title>
+    <title>Noema Riddle</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,9 @@
 
     <!-- Cormorant -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon">
+    <link rel="apple-touch-icon" href="favicon">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,8 +33,23 @@
 
 <div id="container">
 
+    <img
+        id="logo"
+        src="favicon"
+        alt="NOEMA"
+        style="
+            width:min(220px,42vw);
+            height:auto;
+            margin-bottom:34px;
+            opacity:.92;
+            filter:drop-shadow(0 0 22px rgba(255,255,255,.13));
+            user-select:none;
+            pointer-events:none;
+        "
+    >
+
     <h1 id="title">
-       The Date
+        Noema Riddle
     </h1>
 
     <div id="countdown">
@@ -67,7 +85,7 @@
     <div id="finished">
 
         <h2>
-            The gate opened again.
+            The gate has opened.
         </h2>
 
         <button id="continueButton">
